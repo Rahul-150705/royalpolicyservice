@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    value: "Royal Policy Service, Main Road, Tamil Nadu, India",
+    value: "Royal Policy Service,Shanmuga Nathi,Vandi Vaikal,Kalaimbathir,Palani",
     link: null,
   },
   {
