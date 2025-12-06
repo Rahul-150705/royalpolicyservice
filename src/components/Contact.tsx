@@ -189,7 +189,7 @@ const Contact = () => {
             <div className="bg-card rounded-3xl overflow-hidden shadow-xl border border-border/50">
               <div className="aspect-[16/9] bg-secondary relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.2654477768544!2d78.1198!3d9.9252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnMzAuNyJOIDc4wrAwNycxMS4zIkU!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.236846528215!2d77.48753788237224!3d10.455337982954287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dfec7d4dfe19%3A0xd240eea59e5ece40!2sThangavel%20Bakery!5e0!3m2!1sen!2sin!4v1765053294902!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
