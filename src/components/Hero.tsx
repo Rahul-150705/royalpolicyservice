@@ -42,7 +42,7 @@ const Hero = () => {
             {/* Trust indicators */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 animate-fade-up" style={{ animationDelay: '0.4s' }}>
               {[
-                "15+ Years Experience",
+                "10+ Years Experience",
                 "5000+ Happy Customers",
                 "Certified Center",
               ].map((item) => (
