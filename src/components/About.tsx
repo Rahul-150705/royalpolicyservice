@@ -1,7 +1,7 @@
 import { Award, Users, Shield, TrendingUp, Target, Heart } from "lucide-react";
 
 const stats = [
-  { value: "15+", label: "Years of Experience" },
+  { value: "10+", label: "Years of Experience" },
   { value: "5000+", label: "Happy Customers" },
   { value: "50+", label: "Insurance Partners" },
   { value: "100%", label: "Claim Settlement" },
