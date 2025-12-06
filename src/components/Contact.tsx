@@ -188,17 +188,18 @@ const Contact = () => {
             {/* Map Placeholder */}
             <div className="bg-card rounded-3xl overflow-hidden shadow-xl border border-border/50">
               <div className="aspect-[16/9] bg-secondary relative">
-                <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.236846528215!2d77.48753788237224!3d10.455337982954287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dfec7d4dfe19%3A0xd240eea59e5ece40!2sThangavel%20Bakery!5e0!3m2!1sen!2sin!4v1765053294902!5m2!1sen!2sin"
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        className="absolute inset-0"
-                        title="Royal Policy Service Location"
-                  />
+               <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.236846528215!2d77.48753788237224!3d10.455337982954287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dfec7d4dfe19%3A0xd240eea59e5ece40!2sThangavel%20Bakery!5e0!3m2!1sen!2sin!4v1765053294902!5m2!1sen!2sin"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="absolute inset-0"
+  title="Royal Policy Service Location"
+/>
+
               </div>
               <div className="p-6">
                 <h4 className="font-serif font-bold text-foreground mb-2">Visit Our Office</h4>
