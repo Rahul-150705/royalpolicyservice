@@ -40,7 +40,7 @@ const About = () => {
                     <div className="w-24 h-24 mx-auto mb-4 bg-primary-foreground/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                       <Award className="w-12 h-12" />
                     </div>
-                    <h3 className="font-serif text-3xl font-bold mb-2">Since 2010</h3>
+                    <h3 className="font-serif text-3xl font-bold mb-2">Since 2015</h3>
                     <p className="text-primary-foreground/80">Serving with Excellence</p>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ const About = () => {
             </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
               <strong className="text-foreground">Royal Policy Service</strong> has been a cornerstone of trust 
-              and reliability in the insurance industry since 2010. What started as a small family business 
+              and reliability in the insurance industry since 2015. What started as a small family business 
               has grown into a comprehensive insurance advisory and vehicle service center.
             </p>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
