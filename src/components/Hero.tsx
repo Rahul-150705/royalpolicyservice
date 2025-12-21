@@ -1,5 +1,23 @@
-import { Clock, Headphones, Shield, Heart, Umbrella, Users, Plane, HeartPulse, Wallet, Baby, Bike, Car, TrendingUp, PiggyBank, Home, Building } from "lucide-react";
+import {
+  Clock,
+  Headphones,
+  Shield,
+  Heart,
+  Umbrella,
+  Users,
+  Plane,
+  HeartPulse,
+  Wallet,
+  Baby,
+  Bike,
+  Car,
+  TrendingUp,
+  PiggyBank,
+  Home,
+  Building
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import homeImg from "@/components/ui/homeimg.png"; // ✅ LOCAL IMAGE IMPORT
 
 const insuranceTypes = [
   { icon: Shield, label: "Family Health", sublabel: "Insurance" },
@@ -20,7 +38,10 @@ const insuranceTypes = [
 
 const Hero = () => {
   return (
-    <section id="home" className="relative pt-24 md:pt-28 pb-8 overflow-hidden bg-gradient-to-br from-background via-secondary/30 to-background">
+    <section
+      id="home"
+      className="relative pt-24 md:pt-28 pb-8 overflow-hidden bg-gradient-to-br from-background via-secondary/30 to-background"
+    >
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
@@ -29,14 +50,17 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
+          
           {/* Content */}
           <div className="text-left animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Buy Insurance, <span className="text-muted-foreground">The Smart Way.</span>
+              Buy Insurance,{" "}
+              <span className="text-muted-foreground">The Smart Way.</span>
             </h1>
-            
+
             <p className="text-muted-foreground text-lg mb-8 max-w-xl leading-relaxed">
-              Our advanced tools and expert guidance simplify the insurance journey, ensuring you get the right policy with ease. Trust us to help you buy insurance the smart way, saving you time and money.
+              Our advanced tools and expert guidance simplify the insurance
+              journey, ensuring you get the right policy with ease.
             </p>
 
             <Button variant="accent" size="xl" className="mb-10" asChild>
@@ -54,6 +78,7 @@ const Hero = () => {
                   <p className="text-muted-foreground text-sm">Hassle Free</p>
                 </div>
               </div>
+
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
                   <Headphones className="w-6 h-6 text-accent" />
@@ -69,9 +94,9 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="relative hidden lg:block animate-slide-in-right">
             <div className="relative">
-              <img 
-                src="https://media.istockphoto.com/id/1173046833/photo/sale-agent-deal-to-agreement-successful-car-loan-contract-with-customer-and-sign-agreement.jpg?s=2048x2048&w=is&k=20&c=trOxEIFgu79fMdL1-j405ALgVhC33RdJ6J6E1-WnW8k="
-                alt="Insurance agent helping customer with car insurance"
+              <img
+                src={homeImg} // ✅ LOCAL IMAGE USED
+                alt="Insurance agent helping customer"
                 className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl object-cover aspect-[3/4]"
               />
               <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground rounded-2xl p-4 shadow-xl">
@@ -94,8 +119,12 @@ const Hero = () => {
                 <div className="w-12 h-12 mx-auto mb-3 bg-secondary rounded-xl flex items-center justify-center group-hover:bg-accent/10 transition-colors">
                   <type.icon className="w-6 h-6 text-accent" />
                 </div>
-                <p className="text-sm font-semibold text-foreground leading-tight">{type.label}</p>
-                <p className="text-xs text-muted-foreground">{type.sublabel}</p>
+                <p className="text-sm font-semibold text-foreground">
+                  {type.label}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {type.sublabel}
+                </p>
               </a>
             ))}
           </div>
