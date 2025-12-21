@@ -7,8 +7,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "9344498444",
-    link: "tel:9344498444",
+    value: "+91 9344498444",
+    link: "tel:+919344498444",
   },
   {
     icon: Mail,
@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    value: "Royal Policy Service,Shanmuga Nathi,Vandi Vaikal,Kalaimbathir,Palani",
+    value: "Royal Policy Service, Shanmuga Nathi, Vandi Vaikal, Kalaimbathir, Palani",
     link: null,
   },
   {
@@ -47,7 +47,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
     
     toast({
@@ -60,26 +59,23 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-secondary/30">
+    <section id="contact" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block bg-primary text-primary-foreground font-semibold text-sm px-4 py-2 rounded-full mb-4">
-            Get In Touch
-          </span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Contact Us Today
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Get In <span className="text-accent">Touch</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground">
             Have questions about our services? Need a quote? We're here to help. 
             Reach out to us and our team will respond within 24 hours.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-card rounded-3xl p-8 lg:p-10 shadow-xl border border-border/50">
-            <h3 className="font-serif text-2xl font-bold text-foreground mb-6">
+          <div className="bg-card rounded-3xl p-8 shadow-xl border border-border/50">
+            <h3 className="text-2xl font-bold text-foreground mb-6">
               Send us a Message
             </h3>
             
@@ -96,7 +92,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
                     placeholder="John Doe"
                   />
                 </div>
@@ -111,7 +107,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
                     placeholder="9876543210"
                   />
                 </div>
@@ -128,7 +124,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -144,7 +140,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all resize-none"
                   placeholder="Tell us how we can help you..."
                 />
               </div>
@@ -162,20 +158,20 @@ const Contact = () => {
           </div>
 
           {/* Contact Info & Map */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Contact Cards */}
             <div className="grid sm:grid-cols-2 gap-4">
               {contactInfo.map((info) => (
                 <div
                   key={info.title}
-                  className="bg-card rounded-2xl p-6 shadow-card border border-border/50 hover:shadow-card-hover transition-all duration-300"
+                  className="bg-card rounded-2xl p-6 shadow-card border border-border/50"
                 >
-                  <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-4">
-                    <info.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-4">
+                    <info.icon className="w-6 h-6 text-accent" />
                   </div>
                   <h4 className="font-semibold text-foreground mb-1">{info.title}</h4>
                   {info.link ? (
-                    <a href={info.link} className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    <a href={info.link} className="text-muted-foreground hover:text-accent transition-colors text-sm">
                       {info.value}
                     </a>
                   ) : (
@@ -185,26 +181,25 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <div className="bg-card rounded-3xl overflow-hidden shadow-xl border border-border/50">
-              <div className="aspect-[16/9] bg-secondary relative">
-               <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.236846528215!2d77.48753788237224!3d10.455337982954287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dfec7d4dfe19%3A0xd240eea59e5ece40!2sThangavel%20Bakery!5e0!3m2!1sen!2sin!4v1765053294902!5m2!1sen!2sin"
-  width="100%"
-  height="100%"
-  style={{ border: 0 }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  className="absolute inset-0"
-  title="Royal Policy Service Location"
-/>
-
+              <div className="aspect-[16/9] relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.236846528215!2d77.48753788237224!3d10.455337982954287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dfec7d4dfe19%3A0xd240eea59e5ece40!2sThangavel%20Bakery!5e0!3m2!1sen!2sin!4v1765053294902!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0"
+                  title="Royal Policy Service Location"
+                />
               </div>
               <div className="p-6">
-                <h4 className="font-serif font-bold text-foreground mb-2">Visit Our Office</h4>
+                <h4 className="font-bold text-foreground mb-2">Visit Our Office</h4>
                 <p className="text-muted-foreground text-sm">
-                  We're conveniently located on Main Road. Look for our blue signboard!
+                  We're conveniently located in Palani. Come visit us!
                 </p>
               </div>
             </div>

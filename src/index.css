@@ -2,46 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    --background: 0 0% 100%;
+    --foreground: 220 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 220 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 220 20% 20%;
 
-    --primary: 215 80% 25%;
+    --primary: 220 60% 25%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 60% 95%;
-    --secondary-foreground: 215 80% 25%;
+    --secondary: 220 30% 96%;
+    --secondary-foreground: 220 60% 25%;
 
-    --muted: 210 30% 94%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 10% 50%;
 
-    --accent: 45 90% 50%;
-    --accent-foreground: 215 25% 15%;
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 210 30% 88%;
-    --input: 210 30% 88%;
-    --ring: 215 80% 25%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 220 60% 25%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(215 80% 25%) 0%, hsl(210 70% 35%) 50%, hsl(200 60% 45%) 100%);
-    --card-shadow: 0 4px 20px -4px hsl(215 80% 25% / 0.15);
-    --card-shadow-hover: 0 12px 40px -8px hsl(215 80% 25% / 0.25);
-    --glow-primary: 0 0 40px hsl(215 80% 25% / 0.3);
-    --glow-accent: 0 0 30px hsl(45 90% 50% / 0.4);
+    --hero-gradient: linear-gradient(135deg, hsl(220 60% 25%) 0%, hsl(220 50% 35%) 100%);
+    --accent-gradient: linear-gradient(135deg, hsl(25 95% 55%) 0%, hsl(35 95% 60%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(220 60% 25% / 0.08);
+    --card-shadow-hover: 0 12px 40px -8px hsl(220 60% 25% / 0.15);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -54,33 +53,33 @@
   }
 
   .dark {
-    --background: 215 30% 8%;
-    --foreground: 210 40% 98%;
+    --background: 220 25% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 215 30% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 25% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 215 30% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 60% 60%;
-    --primary-foreground: 215 30% 8%;
+    --primary: 220 60% 60%;
+    --primary-foreground: 220 25% 8%;
 
-    --secondary: 215 25% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 215 25% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 15% 60%;
 
-    --accent: 45 90% 55%;
-    --accent-foreground: 215 30% 8%;
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 215 25% 20%;
-    --input: 215 25% 20%;
-    --ring: 210 60% 60%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 220 60% 60%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -103,12 +102,12 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -122,20 +121,16 @@
     background: var(--hero-gradient);
   }
 
+  .bg-accent-gradient {
+    background: var(--accent-gradient);
+  }
+
   .shadow-card {
     box-shadow: var(--card-shadow);
   }
 
   .shadow-card-hover {
     box-shadow: var(--card-shadow-hover);
-  }
-
-  .glow-primary {
-    box-shadow: var(--glow-primary);
-  }
-
-  .glow-accent {
-    box-shadow: var(--glow-accent);
   }
 
   .animate-fade-up {
