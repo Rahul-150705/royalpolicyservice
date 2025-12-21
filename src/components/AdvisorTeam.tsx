@@ -8,7 +8,7 @@ const advisor = {
   role: "Insurance Advisor",
   // TODO: Replace with actual advisor photo
   // Upload your image and use: image: "/your-uploaded-image.jpg"
-  image: "/src/components/ui/advisorimg.jpeg",
+  image: "/src/components/ui/advisorimg.jpg",
 };
 
 const stats = [
