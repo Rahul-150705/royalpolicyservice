@@ -70,13 +70,13 @@ const Hero = () => {
           <div className="relative hidden lg:block animate-slide-in-right">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=700&fit=crop&crop=faces"
-                alt="Insurance advisor smiling"
-                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl object-cover"
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop&crop=faces"
+                alt="Insurance advisor"
+                className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl object-cover aspect-[3/4]"
               />
               <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground rounded-2xl p-4 shadow-xl">
                 <p className="font-bold text-lg">Since 2015</p>
-                <p className="text-sm opacity-90">Serving Excellence</p>
+                <p className="text-sm opacity-90">10+ Years Experience</p>
               </div>
             </div>
           </div>
