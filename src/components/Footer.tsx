@@ -1,30 +1,29 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
     { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "Pollution Center", href: "#pollution" },
-    { name: "About Us", href: "#about" },
+    { name: "About", href: "#about" },
+    { name: "Partners", href: "#partners" },
+    { name: "Reviews", href: "#reviews" },
     { name: "Contact", href: "#contact" },
   ];
 
   const services = [
-    "Motor Insurance",
     "Health Insurance",
     "Life Insurance",
-    "Home Insurance",
+    "Motor Insurance",
     "Travel Insurance",
+    "Investment Plans",
     "PUC Certificate",
   ];
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Youtube, href: "#", label: "YouTube" },
   ];
 
   return (
@@ -34,17 +33,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary-foreground/10 rounded-lg flex items-center justify-center">
-                <span className="text-accent font-serif font-bold text-2xl">R</span>
-              </div>
-              <div>
-                <h3 className="font-serif font-bold text-xl leading-tight">Royal Policy</h3>
-                <p className="text-primary-foreground/70 text-sm leading-tight">Service</p>
-              </div>
-            </div>
+            <h3 className="text-2xl font-bold mb-4 uppercase">RoyalPolicyService</h3>
             <p className="text-primary-foreground/70 mb-6 leading-relaxed">
-              Your trusted partner for comprehensive insurance solutions and certified vehicle pollution testing since 2010.
+              Your trusted partner for comprehensive insurance solutions since 2015. We help you secure your future with the best insurance plans.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -63,7 +54,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Quick Links</h4>
+            <h4 className="font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -80,7 +71,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Our Services</h4>
+            <h4 className="font-bold text-lg mb-6">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
@@ -92,14 +83,14 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Contact Info</h4>
+            <h4 className="font-bold text-lg mb-6">Contact Info</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-primary-foreground/70 text-sm">Call Us</p>
-                  <a href="tel:9344498444" className="hover:text-accent transition-colors font-medium">
-                    9344498444
+                  <a href="tel:+919344498444" className="hover:text-accent transition-colors font-medium">
+                    +91 9344498444
                   </a>
                 </div>
               </li>
@@ -116,7 +107,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-primary-foreground/70 text-sm">Visit Us</p>
-                  <p className="font-medium">Main Road, Tamil Nadu, India</p>
+                  <p className="font-medium">Kalaimbathir, Palani</p>
                 </div>
               </li>
             </ul>

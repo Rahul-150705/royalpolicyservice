@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import PollutionCenter from "@/components/PollutionCenter";
-import About from "@/components/About";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Partners from "@/components/Partners";
+import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -13,9 +13,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <Services />
-        <PollutionCenter />
-        <About />
+        <WhyChooseUs />
+        <Partners />
+        <Reviews />
         <Contact />
       </main>
       <Footer />

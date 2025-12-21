@@ -1,46 +1,26 @@
 import { useState } from "react";
-import { Menu, X, Phone, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X, Phone } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "Pollution Center", href: "#pollution" },
-    { name: "About Us", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "#about" },
+    { name: "Partners", href: "#partners" },
+    { name: "Reviews", href: "#reviews" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
-      {/* Top bar with contact info */}
-      <div className="bg-primary text-primary-foreground py-2 hidden md:block">
-        <div className="container mx-auto px-4 flex justify-end items-center gap-6 text-sm">
-          <a href="tel:9344498444" className="flex items-center gap-2 hover:text-accent transition-colors">
-            <Phone className="w-4 h-4" />
-            <span>9344498444</span>
-          </a>
-          <a href="mailto:royalpolicyservice@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
-            <Mail className="w-4 h-4" />
-            <span>royalpolicyservice@gmail.com</span>
-          </a>
-        </div>
-      </div>
-
-      {/* Main navbar */}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-hero-gradient rounded-lg flex items-center justify-center shadow-md">
-              <span className="text-primary-foreground font-serif font-bold text-xl md:text-2xl">R</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-lg md:text-xl text-foreground leading-tight">Royal Policy</span>
-              <span className="text-xs md:text-sm text-muted-foreground leading-tight">Service</span>
-            </div>
+          <a href="#home" className="flex items-center">
+            <span className="text-xl md:text-2xl font-bold tracking-tight text-primary uppercase">
+              ROYALPOLICYSERVICE
+            </span>
           </a>
 
           {/* Desktop Navigation */}
@@ -49,18 +29,24 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors text-sm"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button variant="accent" size="lg" asChild>
-              <a href="#contact">Get a Quote</a>
-            </Button>
+          {/* Phone CTA */}
+          <div className="hidden lg:flex items-center gap-3">
+            <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center">
+              <Phone className="w-5 h-5 text-accent" />
+            </div>
+            <div className="text-left">
+              <p className="text-xs text-muted-foreground">Happy to Help you</p>
+              <a href="tel:+919344498444" className="font-semibold text-foreground">
+                +91 9344498444
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,7 +62,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-card border-t border-border animate-fade-in">
+        <div className="lg:hidden bg-background border-t border-border animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
@@ -88,19 +74,12 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <div className="flex flex-col gap-2 pt-4 border-t border-border">
-              <a href="tel:9344498444" className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="w-4 h-4" />
-                <span>9344498444</span>
-              </a>
-              <a href="mailto:royalpolicyservice@gmail.com" className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="w-4 h-4" />
-                <span>royalpolicyservice@gmail.com</span>
+            <div className="flex items-center gap-2 pt-4 border-t border-border">
+              <Phone className="w-4 h-4 text-accent" />
+              <a href="tel:+919344498444" className="font-semibold text-foreground">
+                +91 9344498444
               </a>
             </div>
-            <Button variant="accent" className="mt-2" asChild>
-              <a href="#contact">Get a Quote</a>
-            </Button>
           </div>
         </div>
       )}
