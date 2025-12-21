@@ -70,8 +70,8 @@ const Hero = () => {
           <div className="relative hidden lg:block animate-slide-in-right">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=1000&fit=crop"
-                alt="Car and bike insurance"
+                src="https://media.istockphoto.com/id/1173046833/photo/sale-agent-deal-to-agreement-successful-car-loan-contract-with-customer-and-sign-agreement.jpg?s=2048x2048&w=is&k=20&c=trOxEIFgu79fMdL1-j405ALgVhC33RdJ6J6E1-WnW8k="
+                alt="Insurance agent helping customer with car insurance"
                 className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl object-cover aspect-[3/4]"
               />
               <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground rounded-2xl p-4 shadow-xl">
