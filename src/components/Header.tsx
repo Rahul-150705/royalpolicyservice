@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import logoImg from "@/components/ui/logo.jpeg"; // ✅ LOGO IMPORT
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,14 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16 md:h-20">
+          
           {/* Logo */}
-          <a href="#home" className="flex items-center">
+          <a href="#home" className="flex items-center gap-3">
+            <img
+              src={logoImg}
+              alt="Royal Policy Service Logo"
+              className="w-10 h-10 object-contain"
+            />
             <span className="text-xl md:text-2xl font-bold tracking-tight text-primary uppercase">
               ROYALPOLICYSERVICE
             </span>
@@ -55,7 +62,11 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </nav>
       </div>
