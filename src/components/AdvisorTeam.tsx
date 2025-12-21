@@ -4,11 +4,11 @@ import advisorImg from "@/components/ui/advisorimg.jpeg";
 // Upload your photo and update the 'image' field with the correct path
 // Example: image: "/path/to/your-photo.jpg"
 const advisor = {
-  name: "Your Advisor Name", // TODO: Update with actual name
+  name: "Palanisamy R", // TODO: Update with actual name
   role: "Insurance Advisor",
   // TODO: Replace with actual advisor photo
   // Upload your image and use: image: "/your-uploaded-image.jpg"
-  image: "advisorImg",
+  image: "/src/components/ui/advisorimg.jpeg",
 };
 
 const stats = [
