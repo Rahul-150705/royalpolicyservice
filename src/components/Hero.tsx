@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="relative hidden lg:block animate-slide-in-right">
             <div className="relative">
               <img 
-                src="advisorImg"
+                src={advisorImg}
                 alt="Insurance advisor"
                 className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl object-cover aspect-[3/4]"
               />
