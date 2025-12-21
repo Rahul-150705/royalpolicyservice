@@ -1,5 +1,6 @@
 import { Clock, Headphones, Shield, Heart, Umbrella, Users, Plane, HeartPulse, Wallet, Baby, Bike, Car, TrendingUp, PiggyBank, Home, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import advisorImg from "@/components/ui/advisorimg.jpg";
 
 const insuranceTypes = [
   { icon: Shield, label: "Family Health", sublabel: "Insurance" },
@@ -70,7 +71,7 @@ const Hero = () => {
           <div className="relative hidden lg:block animate-slide-in-right">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop&crop=faces"
+                src="advisorImg"
                 alt="Insurance advisor"
                 className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl object-cover aspect-[3/4]"
               />
