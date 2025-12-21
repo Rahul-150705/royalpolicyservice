@@ -1,5 +1,5 @@
 import { MapPin, Languages, FileCheck, Calendar } from "lucide-react";
-
+import advisorImg from "@/components/ui/advisorimg.jpeg";
 // TODO: Replace this placeholder image with your actual advisor photo
 // Upload your photo and update the 'image' field with the correct path
 // Example: image: "/path/to/your-photo.jpg"
@@ -8,7 +8,7 @@ const advisor = {
   role: "Insurance Advisor",
   // TODO: Replace with actual advisor photo
   // Upload your image and use: image: "/your-uploaded-image.jpg"
-  image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&h=600&fit=crop&crop=faces",
+  image: "advisorImg",
 };
 
 const stats = [
