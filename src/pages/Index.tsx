@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Advisor from "@/components/Advisor";
+import AdvisorTeam from "@/components/AdvisorTeam";
+import PollutionCenter from "@/components/PollutionCenter";
 import Partners from "@/components/Partners";
 import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
@@ -15,7 +16,8 @@ const Index = () => {
       <main>
         <Hero />
         <WhyChooseUs />
-        <Advisor />
+        <AdvisorTeam />
+        <PollutionCenter />
         <Partners />
         <Reviews />
         <Contact />
