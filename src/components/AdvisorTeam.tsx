@@ -1,9 +1,10 @@
 import { MapPin, Languages, FileCheck, Calendar } from "lucide-react";
+import advisorImg from "@/components/ui/advisorimg.jpg";
 
 const advisor = {
   name: "Palanisamy R",
   role: "Insurance Advisor",
-  image: "/assets/advisorimg-BhnwKZUF.jpg",
+  image: advisorImg,
 };
 
 const stats = [
