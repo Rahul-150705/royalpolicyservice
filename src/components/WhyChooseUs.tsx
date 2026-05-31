@@ -53,8 +53,8 @@ const WhyChooseUs = () => {
               </Button>
             </div>
             <div className="hidden lg:block">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
+              <img
+                src="/assets/advisorimg-BhnwKZUF.jpg"
                 alt="Insurance agent"
                 className="w-full max-w-sm mx-auto rounded-2xl shadow-lg"
               />
