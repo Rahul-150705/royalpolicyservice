@@ -9,6 +9,8 @@ const benefits = [
   { icon: Heart, label: "Care-free Retirement" },
 ];
 
+import advisorImg from "@/components/ui/advisorimg.jpg";
+
 const WhyChooseUs = () => {
   return (
     <section id="about" className="py-20 md:py-28 bg-secondary/30">
@@ -54,7 +56,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="hidden lg:block">
               <img
-                src="/assets/advisorimg-BhnwKZUF.jpg"
+                src={advisorImg}
                 alt="Insurance agent"
                 className="w-full max-w-sm mx-auto rounded-2xl shadow-lg"
               />
