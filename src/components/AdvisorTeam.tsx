@@ -1,10 +1,9 @@
 import { MapPin, Languages, FileCheck, Calendar } from "lucide-react";
-import advisorImg from "@/components/ui/advisorimg.jpg";
 
 const advisor = {
   name: "Palanisamy R",
   role: "Insurance Advisor",
-  image: advisorImg, // ✅ USE THE IMPORTED IMAGE
+  image: "/assets/advisorimg-BhnwKZUF.jpg",
 };
 
 const stats = [
@@ -27,7 +26,7 @@ const AdvisorTeam = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-card rounded-3xl overflow-hidden shadow-xl border border-border/50">
             <div className="grid md:grid-cols-2">
-              
+
               {/* Advisor Image */}
               <div className="relative">
                 <img
